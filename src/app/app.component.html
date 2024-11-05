@@ -1,0 +1,20 @@
+<div cds-theme="ligth">
+<h1>App Component</h1>
+
+
+<button type="button" class="btn btn-primary" (click)="modalOpen = true">SHow Modal</button>
+
+<clr-modal [(clrModalOpen)]="modalOpen">
+  <h3 class="modal-title">I have a nice title</h3>
+  <div class="modal-body">
+    <p>But not much to say...</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="modalOpen = false">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="modalOpen = false">Ok</button>
+  </div>
+</clr-modal>
+
+
+</div>
+<router-outlet />
